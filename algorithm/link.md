@@ -47,10 +47,12 @@ func main() {
 			fmt.Println(nowNode.Data)
 			// 获取下一个节点
 			nowNode = nowNode.NextNode
+			fmt.Println(nowNode)
+		} else {
+			// 如果下一个节点为空，表示链表结束了
+			break
 		}
 
-		// 如果下一个节点为空，表示链表结束了
-		break
 	}
 }
 ```
